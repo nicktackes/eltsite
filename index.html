@@ -285,24 +285,21 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="brand" href="#">Enterprise Linking Technologies</a>
             <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
             <div class="nav-collapse collapse">
               <ul class="nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
                 <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Samples <b class="caret"></b></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li class="nav-header">Nav header</li>
-                    <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li>
+                    <li><a href="#">Simple</a></li>
+                    <li><a href="#">Bahavioral Tests</a></li>
+                      <li class="divider"></li>
+                    <li><a href="#">Advanced</a></li>
+                      <li><a href="#">Bahavioral Tests</a></li>
                   </ul>
                 </li>
               </ul>
@@ -316,6 +313,58 @@
 
 
     <!-- Modal -->
+    <div id="moreAdvise" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="moreAdviseLabel" aria-hidden="true">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="moreAdviseLabel">Advise</h3>
+      </div>
+      <div class="modal-body">
+          <p>//TODO:</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+      </div>
+    </div>
+
+    <div id="moreArchitect" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="moreArchitectLabel" aria-hidden="true">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="moreArchitectLabel">Architect</h3>
+      </div>
+      <div class="modal-body">
+        <p>//TODO:</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+      </div>
+    </div>
+
+    <div id="moreDevelop" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="moreDevelopLabel" aria-hidden="true">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="moreDevelopLabel">Develop</h3>
+      </div>
+      <div class="modal-body">
+        <p>//TODO:</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+      </div>
+    </div>
+
+    <div id="moreHost" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="moreHostLabel" aria-hidden="true">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="moreHostLabel">Host</h3>
+      </div>
+      <div class="modal-body">
+        <p>//TODO:</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+      </div>
+    </div>
+
     <div id="moreReactiveApps" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="moreReactiveAppsLabel" aria-hidden="true">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
@@ -446,28 +495,28 @@
           <h2>Advise</h2>
             <blockquote><i>The trouble with doing something right the first time is that nobody appreciates how difficult it was.</i></blockquote>
           <p>We can bring our wisdom and experience to bare on your technology and architecture and help you steer clear of bad decisions early in your development cycle.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+          <p><a href="#moreAdvise" role="button"  class="btn" data-toggle="modal">More &raquo;</a></p>
         </div><!-- /.span4 -->
         <div class="span4">
           <img class="img-circle" data-src="holder.js/140x140"  src="img/custom/architect.jpg">
           <h2>Architect</h2>
             <blockquote><i>Architecture starts when you carefully put two bricks together. There it begins.</i></blockquote>
           <p>Inadequate architectural planning will doom any software endeavor before it starts.  We pride ourselves on being thought leaders and innovators in this aspect of the software lifecycle.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+            <p><a href="#moreArchitect" role="button"  class="btn" data-toggle="modal">More &raquo;</a></p>
         </div><!-- /.span4 -->
         <div class="span4">
           <img class="img-circle" data-src="holder.js/140x140" src="img/custom/develop.jpg">
           <h2>Develop</h2>
             <blockquote><i>Quality is not an act, its a habit.</i></blockquote>
           <p>Have a development team?  We can train them.  Need a development team, we have serious coding chops.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+            <p><a href="#moreDevelop" role="button"  class="btn" data-toggle="modal">More &raquo;</a></p>
         </div><!-- /.span4 -->
           <div class="span4">
             <img class="img-circle" data-src="holder.js/140x140" src="img/custom/host.jpg">
             <h2>Host</h2>
               <blockquote><i>A host is like a general: calamities often reveal his genius.</i></blockquote>
             <p>If you do not have the in house infrastructure to host or simply don't want to hassle with it, we can provide full support and cloud hosting services.</p>
-            <p><a class="btn" href="#">View details &raquo;</a></p>
+              <p><a href="#moreHost" role="button"  class="btn" data-toggle="modal">More &raquo;</a></p>
           </div><!-- /.span4 -->
       </div><!-- /.row -->
 
