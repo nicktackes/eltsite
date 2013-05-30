@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
   <head>
     <meta charset="utf-8">
     <title>Reactive Apps</title>
@@ -315,6 +315,73 @@
 
 
 
+    <!-- Modal -->
+    <div id="moreReactiveApps" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="moreReactiveAppsLabel" aria-hidden="true">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="moreReactiveAppsLabel">Reactive Apps</h3>
+      </div>
+      <div class="modal-body">
+        <p>The new paradigm in modern web sites is the evolution to reactive applications. What exactly is a reactive application and why should we care?</p>
+        <p>Reactive applications are desktop-type apps for the web with sophisticated domain-specific behavior to “consumerize” them so that they guide the user along the right paths to get their jobs done correctly, quickly and without frustration.</p>
+        <p>They’re what most businesses are aiming for today whenever they build an internal or business-to-business application. If you’re a developer or stakeholder involved in building such an application, you know how difficult they can be to construct within the browser.</p>
+        <p>It was easier when you didn’t have to build that behavior. Old-school web applications with postbacks and full-page refreshes are not reactive applications because they don’t respond and guide the user in real-time. Users are left to wait until a page rebuilds to find out what they did wrong or what to do next. For complex business domains, the pages have to be artificially split to respond quickly and the division of united tasks can further confuse the user. So while easier on the developers and stakeholders to define and build, they are no longer enough.</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+      </div>
+    </div>
+
+    <div id="moreHardToDevAndTest" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="moreHardToDevAndTestLabel" aria-hidden="true">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="moreHardToDevAndTestLabel">Development and Testability of Reactive Apps</h3>
+      </div>
+      <div class="modal-body">
+        <p>There are all sorts of application frameworks that aim at making JavaScript web application development easier. They can successfully deliver rich and pleasing layouts across different browser environments with minimum work, making it seem as if the application is “almost done” and just needing a little polish.</p>
+        <p>But reactive applications are not simply about eye candy–they’re about delivering business value by making the experience simple and directed for the user. They do this by continually updating the screen to instantly respond to user input and the current state of the data filtered through context-specific business rules. Here are some of the common patterns you might find in a reactive application:
+        <ul><li>Action buttons that enable and disable immediately based on the state of your application and what is selected. For instance, an “apply” button that is active only when all selected rows in a grid meet certain business requirements.</li>
+        <li>Calculated fields and status icons based on the values of other fields that immediately update when any of the source fields change.</li>
+        <li>Areas of a form that enable or expand immediately based on a parent checkbox being activated or a configuration across multiple fields detected.</li>
+        <li>Tabs that are automatically selected based on the result of actions or the type of data selected.</li>
+        <li>An options box that controls validation thresholds for other screens of the app. When changed, any affected screen calculations update themselves.</li>
+        <li>A detail panel that dynamically changes what it displays based on the type and number of rows selected. For instance, it may show a customized truck panel for a truck asset versus a computer asset, or an aggregate chart if multiple items are selected.</li></ul></p>
+        <p>Capturing all of this domain-specific behavior and making it work correctly is much more difficult than composing the layout. And building it in such a way that it survives the inevitable course corrections and reorganizations along the way without becoming a complete mess is even harder.
+        The bar has been raised. There is no going back. The challenge now is to effectively deal with the daunting complexity of specifying and building a rich reactive application.</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+      </div>
+    </div>
+
+    <div id="moreRightArchitecture" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="moreRightArchitectureLabel" aria-hidden="true">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="moreRightArchitectureLabel">The Right Architecture for Reactive Apps</h3>
+      </div>
+      <div class="modal-body">
+        <p>With the emergence of javascript intensive web applications, more and more behavioral logic has migrated to the browser.  This means that it becomes an imperative to be able to migrate your behavioral tests to the client code as well.  If you don’t then you are building a house of cards that will not sustain the weight of additional functionality as your product matures in its feature set.</p>
+        <p>Frameworks have emerged to assist in isolating your behavioral logic such that it can be tested.  The MVVM design pattern has arguably been the most successful at facilitating behavioral testing of reactive client code.</p>
+        <p>Unfortunately however, Sencha Extjs, the javascript widget library that is used by 55% of Fortune 100 companies does not furnish an MVVM pattern leaving one with a less than perfect framework for true behavioral testing.</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+      </div>
+    </div>
+
+    <div id="moreGoodSauce" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="moreGoodSauceLabel" aria-hidden="true">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="moreGoodSauceLabel">Our Strategic Advantage on Delivering Reactive Apps</h3>
+      </div>
+      <div class="modal-body">
+        <p>Enter GluJs.  GluJs is an MVVM layer built as open source, specifically for Extjs.  This is a little known and almost completely un-adopted technology that revolutionizes the development of sustainable Extjs reactive applications.</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+      </div>
+    </div>
+
     <!-- Carousel
     ================================================== -->
     <div id="myCarousel" class="carousel slide">
@@ -325,7 +392,7 @@
             <div class="carousel-caption">
               <h1>Reactive web applications</h1>
               <p class="lead">The new paradigm of the modern web is reactive applications. What exactly is a reactive application?  They are desktop-like apps for the web that guide the user along the right paths to get their jobs done correctly, quickly and without frustration.  No more old school page postbacks, just smooth, fast, intuitive and rich interaction.</p>
-              <a class="btn btn-large btn-primary" href="learnmore.html">Learn more</a>
+              <a href="#moreReactiveApps" role="button"  class="btn btn-large btn-primary" data-toggle="modal">Learn more</a>
             </div>
           </div>
         </div>
@@ -335,7 +402,7 @@
             <div class="carousel-caption">
               <h1>are hard to develop and test</h1>
               <p class="lead">Capturing all of this domain specific behavior and making it work correctly is much more difficult than laying out a web page. Developing it in such a way that it survives the inevitable course corrections and reorganizations along the way without becoming a complete mess is even harder.</p>
-                <a class="btn btn-large btn-primary" href="learnmore.html">Learn more</a>
+                <a href="#moreHardToDevAndTest" role="button"  class="btn btn-large btn-primary" data-toggle="modal">Learn more</a>
             </div>
           </div>
         </div>
@@ -345,7 +412,7 @@
             <div class="carousel-caption">
               <h1>without the right architecture</h1>
               <p class="lead">With the emergence of javascript intensive web applications, more and more behavioral logic has migrated to the browser.  This means that it becomes an imperative to be able to migrate your behavioral tests to the client code as well.  If you don’t then you are building a house of cards that will not sustain the weight of additional functionality as your product matures in its feature set.</p>
-                <a class="btn btn-large btn-primary" href="learnmore.html">Learn more</a>
+                <a href="#moreRightArchitecture" role="button"  class="btn btn-large btn-primary" data-toggle="modal">Learn more</a>
             </div>
           </div>
         </div>
@@ -355,7 +422,7 @@
               <div class="carousel-caption">
                 <h1>and really good sauce</h1>
                 <p class="lead">We have taken the leading rich internet widget library used by 55% of Fortune 100 companies and outfitted it with an MVVM layer that allows you to have the best of both worlds.  It's our strategic advantage.  What you get is amazingly rich javascript widgets and sustainable and fully testable client code.</p>
-                  <a class="btn btn-large btn-primary" href="learnmore.html">Learn more</a>
+                  <a href="#moreGoodSauce" role="button"  class="btn btn-large btn-primary" data-toggle="modal">Learn more</a>
               </div>
             </div>
           </div>
