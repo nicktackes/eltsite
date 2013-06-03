@@ -260,6 +260,11 @@ body {
     }
 
 }
+#map-canvas {
+    max-width: none;
+    height: 300px;
+    width: 400px;
+}
 </style>
 
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -273,6 +278,29 @@ body {
 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
 <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
 <link rel="shortcut icon" href="favicon.ico">
+
+<script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5tTQooY_E3dX700v_6H64GxMm8_ll8Y0&sensor=true">
+</script>
+<script type="text/javascript">
+    function initialize() {
+        var myLatlng = new google.maps.LatLng(34.103327, -118.160043);
+        var mapOptions = {
+            zoom:10,
+            center:myLatlng,
+            mapTypeId:google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+        var marker = new google.maps.Marker({
+            position:myLatlng,
+            map:map,
+            title:'Enterprise Linking Technologies'
+        });
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
 </head>
 
 <body>
@@ -325,24 +353,43 @@ body {
 
 <!-- Carousel
 ================================================== -->
-<div id="myAbout" class="carousel">
-    <div class="carousel-inner">
-        <div class="item">
-            About....
+<div class="container">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row" style="margin-left: 100px;margin-top: 100px">
+        <div class="span6">
+            <div id="map-canvas">
+            </div>
+        </div>
+        <div class="span6">
+            <h2>Where we are located</h2>
+
+            <p>We are located approximately 10 miles northeast of downtown Los Angeles.</p>
+
+
+            <p>
+                <strong>South Pasadena</strong><br>
+                823 Oneonta Drive<br>
+                South Pasadena, CA 91030<br>
+                Telephone:
+                ++1 (949) 573-5288
+                <br>
+                <br>Pacific Daylight Time (GMT -07:00, Los Angeles)
+            </p>
+
         </div>
     </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+
+        <p>&copy; 2013 Enterprise Linking Technologies. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a>
+        </p>
+    </footer>
+
 </div>
-
-
-<!-- FOOTER -->
-<footer>
-    <p class="pull-right"><a href="#">Back to top</a></p>
-
-    <p>&copy; 2013 Enterprise Linking Technologies. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-</footer>
-
-</div><!-- /.container -->
-
 
 <!-- Le javascript
 ================================================== -->
