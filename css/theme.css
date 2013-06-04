@@ -1,0 +1,20 @@
+/*callout styles*/
+
+#callout_container { background-color: #FFFFFF; float: right; padding: 14px 0 25px 30px; width: 180px;}
+#callout_bg { background-color: #EEF6FC; background-image: url("http://media.cms.bmc.com/designimages/callout-bg_cloud.png"); background-repeat: repeat-y; color: #213443; font-size: 11px; line-height: 14px; margin-bottom: 25px; width: 180px;}
+#callout_bg h4{	color: #213443;font-family: arial,serif; font-size: 11px; font-weight: 600; line-height: 20px; padding: 10px 0;}
+.callout_grey_hdr_bg { background-image: url("http://media.cms.bmc.com/designimages/callout_grey_bg_cloud.png"); background-position: left top; background-repeat: no-repeat; width: 180px;}
+.callout_grey_hdr_leftcorner { background-image: url("http://media.cms.bmc.com/designimages/callout_lft_grey_bg_cloud.png"); background-repeat: no-repeat; float:left;height: 35px; width: 5px;
+}
+.callout_grey_content { color: #213443; font-family: "Helvetica Neue",arial,serif; font-size: 12px; font-weight: bold; padding-left: 5px; padding-top: 10px;  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);}
+.callout_grey_hdr_small_container { float: left; height: 27px; width: 170px; }
+.callout_grey_hdr_rightcorner { background-image: url("http://media.cms.bmc.com/designimages/callout_rt_grey_bg_cloud.png"); background-repeat: no-repeat; float:left;height: 35px; width: 5px;}
+.callout_text { color: #213443; font-size: 11px; line-height: 14px; margin: 10px 10px 0; padding-bottom: 10px;}
+.callout_header_250 {background-image:url(http://media.cms.bmc.com/designimages/box_header_250.png); background-repeat:no-repeat; height:35px; width:245px; padding-left:5px; color:#213443;}
+.callout_image_container {width:250px;text-align:center;}
+#callout_bg_250 {width:250px; background-image:url(http://media.cms.bmc.com/designimages/callout_bg_250_cloud.png); background-repeat:repeat-y;}
+.callout_text p { color: #213443; font-size: 11px; line-height: 16px; margin: 0; padding-bottom: 10px;}
+/*.callout_text ul { color: #213443; list-style-image: url("http://media.cms.bmc.com/designimages/bullet_square_cloud.png"); margin-bottom: 5px; margin-left: 18px; padding: 0;}*/
+.callout_hdr { border-radius: 7px 7px 0 0; background-color: #FFFFFF; background-image: url("http://media.cms.bmc.com/designimages/callout_hdr_darkgrey_cloud.png"); background-position: left top; background-repeat: repeat-x; color: #213443; font-family: 'Open Sans',"Arial","Helvetica",sans-serif; font-size: 17px; font-weight: 600; margin: 0; padding: 20px 4px 10px 20px; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);}
+.callout_hdr_blue { border-radius: 7px 7px 0 0; background-color: #FFFFFF; background-image: url("http://media.cms.bmc.com/designimages/callout_hdr_teal_cloud.png"); background-position: left top; background-repeat: repeat-x; color: #213443; font-family: 'Open Sans',"Arial","Helvetica",sans-serif; font-size: 17px; font-weight: 600; margin: 0; padding: 20px 4px 10px 20px; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);}
+
