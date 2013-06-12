@@ -404,22 +404,15 @@ body {
     </div>
     <div class="modal-body">
         <p>The new paradigm in modern web sites is the evolution to reactive applications. What exactly is a reactive
-            application and why should we care?</p>
+            application?</p>
 
-        <p>Reactive applications are desktop-type apps for the web with sophisticated domain-specific behavior to
-            “consumerize” them so that they guide the user along the right paths to get their jobs done correctly,
-            quickly and without frustration.</p>
+        <p>Reactive applications are web based apps that behave with the rich and responsive experience that we are accustomed to with desktop style installed applications.  We are talking about complex domain specific applications with often, very intensive logic, or advanced multi-faceted applications with lots of rules and validations, and process steps.  Apps that require guidance such that the user can complete their tasks correctly, quickly and without frustration.</p>
 
-        <p>They’re what most businesses are aiming for today whenever they build an internal or business-to-business
-            application. If you’re a developer or stakeholder involved in building such an application, you know how
-            difficult they can be to construct within the browser.</p>
+        <p>This is the complexity and calibre of application that most businesses are attempting to build whenever they build an internal or business-to-business application.  Any developer or domain expert can attest to the difficulty in building such an application designed to run in the browser.</p>
 
-        <p>It was easier when you didn’t have to build that behavior. Old-school web applications with postbacks and
-            full-page refreshes are not reactive applications because they don’t respond and guide the user in
-            real-time. Users are left to wait until a page rebuilds to find out what they did wrong or what to do next.
-            For complex business domains, the pages have to be artificially split to respond quickly and the division of
-            united tasks can further confuse the user. So while easier on the developers and stakeholders to define and
-            build, they are no longer enough.</p>
+        <p>Old school web applications were much simpler to build.  They performed post-backs and full-page refreshes, and therefore, were by definition, not reactive applications because they didn’t respond and guide the user in real time.  Users had to wait for a full page rebuild to find out what they did wrong or what to do next.</p>
+
+        <p>For complex business applications, the pages are often artificially split to respond quickly and the division of united tasks can further confuse the user. While this old school approach was much easier on the developers and designers, it is no longer enough in today's sophisticated modern web.</p>
     </div>
     <div class="modal-footer">
         <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
@@ -543,7 +536,7 @@ body {
 
                     <p class="lead">Capturing all of this domain specific behavior and making it work correctly is much
                         more difficult than laying out a web page. Developing it in such a way that it survives the
-                        inevitable course corrections and reorganizations along the way without becoming a complete mess
+                        inevitable redesigns and reorganizations along the way without becoming a complete mess
                         is even harder.</p>
                     <a href="#moreHardToDevAndTest" role="button" class="btn btn-large btn-primary" data-toggle="modal">Learn
                         more</a>
@@ -666,7 +659,19 @@ body {
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.js"></script>
 <script>
-    !function ($) {
+    $('#myCarousel').on('slid', '', function() {
+        var $this = $(this);
+
+        $this.children('.carousel-control').show();
+        if($('.carousel-inner .item:first').hasClass('active')) {
+          $this.children('.left.carousel-control').hide();
+        }
+        else if($('.carousel-inner .item:last').hasClass('active')) {
+          $this.children('.right.carousel-control').hide();
+      }
+
+    });
+        !function ($) {
         $(function () {
             // carousel demo
             $('#myCarousel').carousel()
