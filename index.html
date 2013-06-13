@@ -432,33 +432,31 @@ body {
 
         <p>But reactive applications are not simply about visual aesthetics.  In actuality, they are about delivering business value by making
             the experience simple and directed for the user. They do this by continually updating the screen to
-            instantly respond to user input and the current state of the data filtered through context-specific business
-            rules. Here are some of the common patterns you might find in a reactive application:
+            instantly respond to user input and the current state of the data filtered through context specific business
+            rules. Here are some of the typical patterns you might find in a reactive application:
         <ul>
-            <li> Buttons that enable and disable immediately based on the state of your application and what is
+            <li>Calculated fields based on the values of other fields that automatically recalculate when any
+                of the base fields change.
+            </li>
+            <li>Regions of a page that enable or expand immediately based on a checkbox being activated.
+            </li>
+            <li>Buttons that enable and disable immediately based on the state of your application and what is
                 selected. For instance, a “Save” button that is active only when something has changed with respect to the page's underlying data.
             </li>
-            <li>Calculated fields and status icons based on the values of other fields that immediately update when any
-                of the source fields change.
-            </li>
-            <li>Areas of a form that enable or expand immediately based on a parent checkbox being activated or a
-                configuration across multiple fields detected.
-            </li>
-            <li>Tabs that are automatically selected based on the result of actions or the type of data selected.</li>
-            <li>An options box that controls validation thresholds for other screens of the app. When changed, any
-                affected screen calculations update themselves.
+            <li>Tabs that are automatically selected, enabled or disabled based on the result of some action occurring or based on the selection of a range of data.</li>
+            <li>A control that governs validation levels for other screens of the application. When the level is changed, any
+                dependent screen calculations update automatically.
             </li>
             <li>A detail panel that dynamically changes what it displays based on the type and number of rows selected.
-                For instance, it may show a customized truck panel for a truck asset versus a computer asset, or an
-                aggregate chart if multiple items are selected.
+                For example, it may show a customized patient profile, based on the age, ethnicity or gender of a patient.
             </li>
         </ul>
         </p>
-        <p>Capturing all of this domain specific behavior and making it work correctly is much more difficult than
-            composing the layout. And building it in such a way that it survives the inevitable redesigns and
-            reorganizations along the way without becoming a complete mess is even harder.
-            The bar has been raised. There is no going back. The challenge now is to effectively deal with the daunting
-            complexity of specifying and building a rich reactive application.</p>
+        <p>Capturing all of this domain specific behavior and making it work correctly is much more difficult than simply
+            laying out a web page. Building an application in such a way that it survives the inevitable redesigns and
+            reorganizations without becoming a complete mess is even harder.
+            The bar has been raised. There is no going back. The new normal is to effectively deal with the expanded
+            complexity of specifying and implementing reactive applications.</p>
     </div>
     <div class="modal-footer">
         <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
